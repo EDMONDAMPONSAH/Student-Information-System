@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentInfo"  pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b7ae033a-4788-48fa-8b34-f9bf2de6f082">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="61"/>
+	<parameter name="invoice" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from student where id =$P{invoice}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dob" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="classs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gname" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gphone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="237" splitType="Stretch">
+			<image>
+				<reportElement x="222" y="16" width="119" height="122" uuid="8162a55a-5a4e-4ff8-8d46-56115620d333"/>
+				<imageExpression><![CDATA["C:\\Users\\user\\Pictures\\pic.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="90" y="159" width="396" height="47" uuid="de9fc74a-8254-4b47-a5c7-9e3aeff60d69"/>
+				<textElement>
+					<font fontName="Algerian" size="24"/>
+				</textElement>
+				<text><![CDATA[STUDENT INFORMATION SYSTEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="183" y="206" width="221" height="20" uuid="cd76da42-cf75-4c12-a96d-4594c416a1fa"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nyameamponsahedmund@gmail.com]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="358" splitType="Stretch">
+			<staticText>
+				<reportElement x="23" y="9" width="54" height="20" uuid="4d4c5a6f-83b3-41d6-8837-1edf4e422216"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="78" width="54" height="20" uuid="1f7f329f-620e-48b8-8aaa-8f04f8c367b8"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Class:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="78" width="39" height="20" uuid="6a358b39-ecf5-46f1-89cb-ce76d0dfd286"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Roll:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="155" width="67" height="20" uuid="0b84cb16-8a57-4bf6-9743-37d8f4a213c6"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="155" width="97" height="20" uuid="0016003f-469e-4f3b-8880-d99a465643a5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[date of Birth:]]></text>
+			</staticText>
+			<line>
+				<reportElement mode="Opaque" x="23" y="207" width="521" height="1" uuid="9df2e260-61d1-4c0a-8e4e-f21a105fc8b3"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="191" y="214" width="147" height="20" uuid="134991a3-5de8-4e4f-9048-d18bb1d7dc80"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[GUARDIAN DETAILS]]></text>
+			</staticText>
+			<line>
+				<reportElement mode="Opaque" x="23" y="242" width="521" height="1" uuid="f1eee92f-7703-478c-8fa1-6200a7efe930"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="43" y="275" width="59" height="20" uuid="a6836f43-ffa5-46dd-a8d7-4d242a69b5d3"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="325" width="59" height="20" uuid="1641e1b1-b813-4f02-9803-9f772f3b1628"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone:]]></text>
+			</staticText>
+			<line>
+				<reportElement mode="Opaque" x="77" y="28" width="376" height="1" uuid="5351d260-dc7b-4823-a390-2d1f7fad2476"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="80" y="97" width="142" height="1" uuid="da73e577-6169-437a-ba76-1f7f57f3a2e0"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="301" y="98" width="142" height="1" uuid="ee9b9649-f547-4243-b8f3-9420c2590c04"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="77" y="175" width="122" height="1" uuid="9b1595e7-a3ab-4835-bbc4-3bc42d1ef835"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="359" y="176" width="122" height="1" uuid="f054dddc-50c8-427b-a1ab-743d8207f278"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="100" y="295" width="406" height="1" uuid="48552674-0ae8-401c-9902-a84b0a551375"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement mode="Opaque" x="102" y="345" width="257" height="1" uuid="9626578a-8717-4fe3-b0f5-377f0da7ec39"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="304" y="77" width="139" height="20" uuid="c125a542-bd74-4b8c-9fb0-9f93f92872b1"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="78" width="142" height="19" uuid="e944cb09-0f00-4d24-8995-8b67dd873923"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="155" width="127" height="20" uuid="5b775d43-3b21-430a-9004-5f1ae30bd0cb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="155" width="100" height="20" uuid="b181a1e2-5914-4a18-98b9-4562fa53cabd"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="8" width="158" height="20" uuid="9fcb91e5-56a2-42fb-8b43-9a0cb1769db9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="10" width="197" height="20" uuid="daca89bc-45aa-4424-980e-92a02d8fbbcb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="275" width="407" height="20" uuid="8f811b6c-69f5-400d-a606-61a9a2581f29"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="102" y="325" width="257" height="20" uuid="f2f69a46-9a92-4263-bbe3-5e95b6e728b3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gphone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
